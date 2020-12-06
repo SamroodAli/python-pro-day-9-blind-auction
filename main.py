@@ -1,7 +1,10 @@
 from replit import clear
+from art import logo
 #HINT: You can call clear() to clear the output in the console.
 next_player = True
 bidders_data=[]
+
+print(logo)
 
 def add_bidders_data(name,bid):
     bidders_data.append({
