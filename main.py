@@ -29,5 +29,6 @@ while next_player:
     add_bidders_data(name,bid)
 
     if next_bidder =="n":
+        clear()
         next_player=False
         bid_winner()
