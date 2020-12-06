@@ -4,7 +4,7 @@ from art import logo
 next_player = True
 bidders_data=[]
 
-print(logo)
+
 
 def add_bidders_data(name,bid):
     bidders_data.append({
@@ -21,14 +21,14 @@ def bid_winner():
     print(f"The winner is {winner['name']} with the bid ${winner['bid']}");
 
 while next_player:
-    clear()
+    print(logo)
     name = input("What is your name ? \n")
     bid = float(input("What is your bid ? \n"))
     next_bidder = input("Are there any more bidders ?\ny for yes\nn for no\n").lower()
 
     add_bidders_data(name,bid)
 
+    clear()
     if next_bidder =="n":
-        clear()
         next_player=False
         bid_winner()
